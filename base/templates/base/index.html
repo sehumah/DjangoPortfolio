@@ -1,0 +1,255 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Stephen Ehumah | Web Developer</title>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <script src="https://kit.fontawesome.com/a49d0072f5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="{% static 'base/css/index.css' %}">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                color: rgb(85, 113, 80);
+                background-color: rgb(250, 250, 250);
+            }
+            h1 {
+                color: rgb(85, 113, 80);
+                font-weight: 900;
+            }
+            .header {
+                width: 100%;
+                background-color: rgb(230, 230, 230);
+            }
+            .bar-item {
+                font-size: 2.0em;
+                font-weight: 900;
+                padding: 2rem;
+                text-decoration: none;
+            }
+            .bar-item:hover {
+                color: rgb(149, 179, 145);
+            }
+            .about-section {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                height: 100vh;
+                /* background-color: #000;
+                background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+            }
+            .about-section h1 {
+                font-size: 600%;
+            }
+            .about-section p {
+                font-size: 300%;
+            }
+            .projects-section {
+                padding: 8rem 2rem;
+            }
+            .project-card {
+                box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            }
+            .view-project-button {
+                background-color: rgb(85, 113, 80);
+                color: rgb(245, 245, 245);
+            }
+            .view-project-button:hover {
+                /*background-color: rgb(149, 179, 145);*/
+                color: rgb(149, 179, 145);
+            }
+            .see-other-projects {
+                margin-top: 3rem;
+            }
+            .contact-section {
+                width: 100%;
+                height: 80vh;
+            }
+            .form-div {
+                width: 50%;
+                margin: 0 auto;
+            }
+            .contact-section-heading {
+                font-size: 3.0rem;
+            }
+            .socials-div {
+                width: 50%;
+                margin: 0 auto;
+            }
+            .social-media-links {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            .social-media-link:hover {
+                color: rgb(149, 179, 145);
+            }
+            .footer {
+                font-size: 150%;
+                padding: 1.5rem;
+                background-color: rgb(230, 230, 230);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header w3-top">
+            <!-- navigation bar -->
+            <div class="w3-bar w3-padding-16">
+                <div class="w3-row">
+                    <div class="w3-col l8 s12">
+                        <a href="#" class="w3-bar-item w3-margin-left bar-item">STEPHEN EHUMAH</a>
+                    </div>
+                    <div class="w3-col l4 s12 w3-center">
+                        <a href="#about" class="w3-bar-item bar-item">About Me</a>
+                        <a href="#projects" class="w3-bar-item bar-item">My Portfolio</a>
+                        <a href="#contact" class="w3-bar-item bar-item">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <!-- about section -->
+            <section id="about" class="about-section w3-mobile">
+                <div class="w3-center w3-mobile">
+                    <h1>Hey I am Stephen</h1>
+                    <p>a web developer</p>
+                </div>
+            </section>
+
+            <!-- projects section -->
+            <section id="projects" class="projects-section w3-mobile">
+                <div class="w3-mobile w3-center w3-margin-bottom">
+                    <h1>Here are some of my projects</h1>
+                </div>
+                <div class="w3-row w3-padding-24">
+                    <div class="w3-col l3 w3-container w3-padding">
+                        <div class="w3-card w3-round-xlarge w3-center project-card">
+                            <div class="w3-container w3-padding-16">
+                                <img src="{% static 'base/images/1.jpg' %}" style="width: 100%;" />
+                                <h3>Project Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <a href="#"  class="w3-button w3-round-xxlarge w3-margin-bottom view-project-button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 w3-container w3-padding">
+                        <div class="w3-card w3-round-xlarge w3-center project-card">
+                            <div class="w3-container w3-padding-16">
+                                <img src="{% static 'base/images/2.jpg' %}" style="width: 100%;" />
+                                <h3>Project Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <a href="#"  class="w3-button w3-round-xxlarge w3-margin-bottom view-project-button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 w3-container w3-padding">
+                        <div class="w3-card w3-round-xlarge w3-center project-card">
+                            <div class="w3-container w3-padding-16">
+                                <img src="{% static 'base/images/3.jpg' %}" style="width: 100%;" />
+                                <h3>Project Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <a href="#"  class="w3-button w3-round-xxlarge w3-margin-bottom view-project-button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w3-col l3 w3-container w3-padding">
+                        <div class="w3-card w3-round-xlarge w3-center project-card">
+                            <div class="w3-container w3-padding-16">
+                                <img src="{% static 'base/images/3.jpg' %}" style="width: 100%;" />
+                                <h3>Project Name</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                <a href="#"  class="w3-button w3-round-xxlarge w3-margin-bottom view-project-button">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w3-row w3-center see-other-projects">
+                    <a href="#"  class="w3-button w3-round view-project-button">See Other Projects</a>
+                </div>
+            </section>
+
+            <!-- contact section -->
+            <section id="contact" class="contact-section w3-mobile">
+                <div class="w3-row">
+                    <h1 class="w3-center contact-section-heading">Get in touch, let's work together...</h1>
+
+                    <!-- contact form -->
+                    <div class=" w3-container w3-mobile form-div">
+                        <form action="" method="post" class="w3-light-grey w3-round-large w3-padding w3-center w3-margin">
+                            <h1>Send me a message</h1>
+                            <div class="w3-row-padding">
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border w3-round-large" type="text" placeholder="first name" required/>
+                                </div>
+                                <div class="w3-half">
+                                    <input class="w3-input w3-border w3-round-large" type="text" placeholder="first name" required/>
+                                </div>
+                            </div>
+                            <div class="w3-row-padding w3-panel">
+                                <input class="w3-input w3-border w3-round-large" type="text" placeholder="email" required/>
+                            </div>
+                            <div class="w3-row-padding w3-panel">
+                                <input class="w3-input w3-border w3-round-large" type="text" placeholder="subject" required/>
+                            </div>
+                            <div class="w3-row-padding w3-panel">
+                                <textarea class="w3-input w3-border w3-round-large" placeholder="your message" required></textarea>
+                            </div>
+                            <div class="w3-row-padding w3-panel">
+                                <a href="#" class="w3-button w3-round-xxlarge w3-margin-bottom view-project-button">Send message</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- social media links -->
+                    <div class="w3-row socials-div">
+                        <div class="w3-row w3-margin w3-padding social-media-links">
+                            <a href="#" class="social-media-link">
+                                <div class="w3-col w3-center">
+                                    <i class="fa-brands fa-instagram w3-xxlarge"></i>
+                                    <p>Instagram</p>
+                                </div>
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <div class="w3-col w3-center">
+                                    <i class="fa-brands fa-twitter w3-xxlarge"></i>
+                                    <p>Twitter</p>
+                                </div>
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <div class="w3-col w3-center">
+                                    <i class="fa-brands fa-instagram w3-xxlarge"></i>
+                                    <p>WhatsApp Me</p>
+                                </div>
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <div class="w3-col w3-center">
+                                    <i class="fa-brands fa-instagram w3-xxlarge"></i>
+                                    <p>Email me</p>
+                                </div>
+                            </a>
+                            <a href="#" class="social-media-link">
+                                <div class="w3-col w3-center">
+                                    <i class="fa-brands fa-github w3-xxlarge"></i>
+                                    <p>GitHub</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="footer w3-mobile">
+            <div class="w3-panel w3-center">
+                <span>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Stephen Ehumah</span>
+            </div>
+        </div>
+    </body>
+</html>

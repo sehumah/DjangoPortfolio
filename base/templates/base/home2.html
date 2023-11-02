@@ -1,0 +1,267 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+    <!-- Home -->
+    <div class="w3-panel" id="home">
+        <div class="w3-row w3-center">
+            <div class="w3-half w3-panel w3-padding w3-margin-top text-content">
+                <div class="w3-row w3-margin-top w3-margin-bottom">
+                    <h2>Software Developer</h2>
+                </div>
+                <div class="w3-row w3-margin-top w3-margin-bottom">
+                    <h3>Hey! I am</h3>
+                    <h1>Stephen Ehumah</h1>
+                </div>
+                <div class="w3-row w3-margin-top w3-margin-bottom">
+                    <h5>A Ghanaian based Software Developer passionate and experienced in developing Web, Mobile and Desktop applications.</h5>
+                </div>
+                <div class="w3-row w3-margin-top w3-margin-bottom">
+                    <button class="w3-button w3-black w3-round-xxlarge" style="width: 150px;">Hire Me</button>
+                </div>
+                <div class="w3-row w3-margin-top w3-margin-bottom">
+                    <h4>Follow me:</h4>
+                    <div class="w3-row">
+                        <a href="" class="w3-margin"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                        <a href="" class="w3-margin"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+                        <a href="" class="w3-margin"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                        <a href="" class="w3-margin"><i class="fa-brands fa-whatsapp fa-2xl"></i></a>
+                        <a href="" class="w3-margin"><i class="fa-brands fa-github fa-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-half w3-panel">
+                <img src="{% static 'base/images/1.jpg' %}" alt="image" style="width: 100%;">
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="w3-panel w3-center" id="about">
+        <div class="w3-row">
+            <div class="w3-half w3-panel">
+                <img src="{% static 'base/images/1.jpg' %}" alt="image" style="width: 100%;">
+            </div>
+            <div class="w3-half w3-panel">
+                <div class="w3-row w3-panel w3-margin-top w3-margin-bottom">
+                    <h3>About Me</h3>
+                </div>
+                <div class="w3-row w3-panel w3-margin-top w3-margin-bottom">
+                    <h1>Why Hire Me For Your Next Project?</h1>
+                </div>
+                <div class="w3-row w3-panel w3-margin-top w3-margin-bottom">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Enim nunc faucibus a pellentesque sit amet porttitor. Fusce id velit ut tortor pretium. Ultricies integer quis auctor elit sed vulputate mi.
+                        Malesuada fames ac turpis egestas integer eget aliquet nibh. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus.
+                        Vitae justo eget magna fermentum. Facilisi morbi tempus iaculis urna id volutpat lacus laoreet non. Eleifend donec pretium vulputate sapien.
+                        Quis viverra nibh cras pulvinar mattis nunc sed blandit libero. Cras tincidunt lobortis feugiat vivamus at. Dictum non consectetur a erat nam.
+                        Aliquam ultrices sagittis orci a. Cursus in hac habitasse platea dictumst quisque sagittis. Orci nulla pellentesque dignissim enim.</h4>
+                </div>
+                <div class="w3-row w3-panel">
+                    <button class="w3-button w3-black w3-round-xxlarge">Download Resume <span><i class="fa-solid fa-download"></i></span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+<!--
+    <div class="w3-panel w3-center w3-padding" id="portfolio">
+        <div class="w3-row-padding">
+            <a href="#"><h5>Checkout My Recent Projects</h5></a>
+        </div>
+        <div class="w3-row-padding">
+            <h1>My Work</h1>
+        </div>
+        <div class="w3-row-padding w3-panel w3-padding">
+            <div class="w3-third w3-center w3-panel">
+                <div class="w3-card w3-round-large w3-padding">
+                    <div class="w3-container">
+                        <img src="{% static 'base/images/1.jpg' %}" alt="image" style="width: 100%;" class="w3-round">
+                        <h3>A Mobile App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Enim nunc faucibus a pellentesque sit amet porttitor. Fusce id velit ut tortor pretium. Ultricies integer quis auctor elit sed vulputate mi.</p>
+                        <button class="w3-button w3-black w3-round-xxlarge">View Project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-center w3-panel">
+                <div class="w3-card w3-round w3-padding">
+                    <div class="w3-container">
+                        <img src="{% static 'base/images/1.jpg' %}" alt="image" style="width: 100%;" class="w3-round">
+                        <h3>A Mobile App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Enim nunc faucibus a pellentesque sit amet porttitor. Fusce id velit ut tortor pretium. Ultricies integer quis auctor elit sed vulputate mi.</p>
+                        <button class="w3-button w3-black w3-round-xxlarge">View Project</button>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-third w3-center w3-panel" style="height: 100%;">
+                <div class="w3-card w3-round w3-padding">
+                    <div class="w3-container">
+                        <img src="{% static 'base/images/1.jpg' %}" alt="image" style="width: 100%;" class="w3-round">
+                        <h3>A Mobile App</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            Enim nunc faucibus a pellentesque sit amet porttitor. Fusce id velit ut tortor pretium. Ultricies integer quis auctor elit sed vulputate mi.</p>
+                        <button class="w3-button w3-black w3-round-xxlarge">View Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+-->
+
+    <!-- Portfolio -->
+    <div class="w3-panel w3-center" id="portfolio">
+        <div class="w3-panel">
+            <h1>My Work</h1>
+        </div>
+        <div class="w3-panel">
+            <h5><a href="#">Checkout my recent projects</a></h5>
+        </div>
+        <div class="w3-row w3-panel">
+            <div class="w3-third w3-panel">
+                <div class="w3-card w3-round">
+                    <img src="{% static 'base/images/1.jpg' %}" class="w3-panel" style="width: 100%;" />
+                    <h3>A Mobile App</h3>
+                    <div class="w3-container">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-margin-bottom">View Project</button>
+                </div>
+            </div>
+            <div class="w3-third w3-panel">
+                <div class="w3-card w3-round">
+                    <img src="{% static 'base/images/1.jpg' %}" class="w3-panel" style="width: 100%;" />
+                    <h3>A Web App</h3>
+                    <div class="w3-container">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-margin-bottom">View Project</button>
+                </div>
+            </div>
+            <div class="w3-third w3-panel">
+                <div class="w3-card w3-round">
+                    <img src="{% static 'base/images/1.jpg' %}" class="w3-panel" style="width: 100%;" />
+                    <h3>A Desktop App</h3>
+                    <div class="w3-container">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-margin-bottom">View Project</button>
+                </div>
+            </div>
+
+            <!--
+            <div class="w3-third w3-panel">
+                <div class="w3-card w3-round">
+                    <img src="{% static 'base/images/1.jpg' %}" class="w3-panel" style="width: 100%;" />
+                    <h3>A General App</h3>
+                    <div class="w3-container">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                    <button class="w3-button w3-black w3-round-xxlarge w3-margin-bottom">View Project</button>
+                </div>
+            </div>
+            -->
+
+        </div>
+    </div>
+
+    <!-- Services -->
+    <div class="w3-panel w3-center" id="services">
+        <div class="w3-panel">
+            <h1>My Services</h1>
+        </div>
+        <div class="w3-panel">
+            <h5>Here are some services that I offer. Be sure to <a href="#contact-me">contact me</a> for more specialized services.</h5>
+        </div>
+        <div class="w3-row w3-panel">
+            <!-- website development -->
+            <div class="w3-quarter w3-panel">
+                <div class="w3-card">
+                    <img src="{% static 'base/images/website.png' %}" class="w3-panel" />
+                    <h3 class="w3-panel">Website Development</h3>
+                    <div class="w3-panel">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- web apps development -->
+            <div class="w3-quarter w3-panel">
+                <div class="w3-card">
+                    <img src="{% static 'base/images/web-application.png' %}" class="w3-panel" />
+                    <h3 class="w3-panel">Web Applications</h3>
+                    <div class="w3-panel">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- mobile apps development -->
+            <div class="w3-quarter w3-panel">
+                <div class="w3-card">
+                    <img src="{% static 'base/images/mobile-application.png' %}" class="w3-panel" />
+                    <h3 class="w3-panel">Mobile Applications</h3>
+                    <div class="w3-panel">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- desktop development -->
+            <div class="w3-quarter w3-panel">
+                <div class="w3-card">
+                    <img src="{% static 'base/images/desktop-application.png' %}" class="w3-panel" />
+                    <h3 class="w3-panel">Desktop Applications</h3>
+                    <div class="w3-panel">
+                        <p>For web development projects, I use languages like HTML, CSS and JavaScript to develop websites for individuals and businesses.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <div class="w3-panel w3-center" id="testimonials">
+        <div class="w3-row w3-panel">
+
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <div class="w3-panel" id="contact-me">
+        <div class="w3-row w3-panel w3-center">
+            <h1>Contact Me</h1>
+            <h5>Let's get in touch</h5>
+        </div>
+        <div class="w3-row w3-panel">
+            <div class="w3-quarter w3-container"></div>
+            <div class="w3-half w3-container">
+                <div class="w3-panel">
+                    <form class="w3-light-grey w3-round-large w3-padding">
+                        <h1 class="w3-center w3-panel">Send Me a Message</h1>
+                        <div class="w3-row-padding">
+                            <div class="w3-half">
+                                <input class="w3-input w3-border w3-round-large" type="text" placeholder="first name" required/>
+                            </div>
+                            <div class="w3-half">
+                                <input class="w3-input w3-border w3-round-large" type="text" placeholder="last name" required/>
+                            </div>
+                        </div>
+                        <div class="w3-row-padding w3-panel">
+                            <input class="w3-input w3-border w3-round-large" type="text" placeholder="email" required/>
+                        </div>
+                        <div class="w3-row-padding w3-panel">
+                            <input class="w3-input w3-border w3-round-large" type="text" placeholder="subject" />
+                        </div>
+                        <div class="w3-row-padding w3-panel">
+                            <textarea class="w3-input w3-border w3-round-large" placeholder="your message" required></textarea>
+                        </div>
+                        <div class="w3-row-padding w3-panel w3-center">
+                            <button class="w3-button w3-black w3-round-xxlarge w3-margin-bottom" type="submit">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="w3-quarter w3-container"></div>
+        </div>
+    </div>
+{% endblock content %}
